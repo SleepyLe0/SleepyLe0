@@ -23,14 +23,12 @@
 
 <table>
   <tr>
-    <td align="center" width="25%"><a href="#the-island"><strong>00 · THE ISLAND</strong></a><br><sub>A place for possibility</sub></td>
-    <td align="center" width="25%"><a href="#the-workshop"><strong>01 · THE WORKSHOP</strong></a><br><sub>Ideas, made real</sub></td>
-    <td align="center" width="25%"><a href="#the-slow-corner"><strong>02 · THE SLOW CORNER</strong></a><br><sub>The human behind it all</sub></td>
-    <td align="center" width="25%"><a href="#the-next-chapter"><strong>03 · THE NEXT CHAPTER</strong></a><br><sub>It starts with a hello</sub></td>
+    <td align="center" width="25%"><a href="#00--somewhere-between-dream--code"><strong>00 · THE ISLAND</strong></a><br><sub>A place for possibility</sub></td>
+    <td align="center" width="25%"><a href="#01--little-sparks-real-possibilities"><strong>01 · THE WORKSHOP</strong></a><br><sub>Ideas, made real</sub></td>
+    <td align="center" width="25%"><a href="#02--powered-by-curiosity-and-matcha"><strong>02 · THE SLOW CORNER</strong></a><br><sub>The human behind it all</sub></td>
+    <td align="center" width="25%"><a href="#03--good-things-begin-with-a-hello"><strong>03 · THE NEXT CHAPTER</strong></a><br><sub>It starts with a hello</sub></td>
   </tr>
 </table>
-
-<a name="the-island"></a>
 
 ## 00 / Somewhere between dream & code.
 
@@ -50,8 +48,6 @@ This is the GitHub corner of **Sleepy World**: an island with a workshop for ide
 The full island has orbit controls, clickable destinations, daylight and moonlight, and a reading view. [Explore it in your browser ↗](https://www.sleepyleo.com/)
 
 </details>
-
-<a name="the-workshop"></a>
 
 ## 01 / Little sparks. Real possibilities.
 
@@ -115,8 +111,6 @@ An INT531 team capstone at KMUTT: deployment automation for a Next.js applicatio
 
 <p align="right"><a href="https://github.com/SleepyLe0?tab=repositories">There’s more in the workshop →</a></p>
 
-<a name="the-slow-corner"></a>
-
 ## 02 / Powered by curiosity. And matcha.
 
 <img src="assets/portrait.webp" alt="Kundids Khawmeesri, also known as SleepyLeo." width="100" align="right">
@@ -159,8 +153,6 @@ The island has two moods. The banner above follows your GitHub theme.
 
 </details>
 
-<a name="the-next-chapter"></a>
-
 ## 03 / Good things begin with a hello.
 
 Have a curious idea, a new opportunity, or a story to share? There’s always room for one more conversation. No grand pitch needed.
@@ -171,5 +163,5 @@ Have a curious idea, a new opportunity, or a story to share? There’s always ro
 
 <p align="center">
   <sub>4 / 4 CORNERS DISCOVERED · HANDCRAFTED WITH CODE & A LITTLE DAYDREAMING</sub><br>
-  <a href="#the-island"><sub>Back to the island ↑</sub></a>
+  <a href="#00--somewhere-between-dream--code"><sub>Back to the island ↑</sub></a>
 </p>

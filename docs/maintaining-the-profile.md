@@ -4,17 +4,16 @@ This repository powers the profile README at https://github.com/SleepyLe0.
 
 ## Content
 
-Edit `README.md`. Keep these four chapter anchors stable:
+Edit `README.md`. The chapter menu uses GitHub's generated heading anchors:
 
-- `the-island`
-- `the-workshop`
-- `the-slow-corner`
-- `the-next-chapter`
+- `00--somewhere-between-dream--code`
+- `01--little-sparks-real-possibilities`
+- `02--powered-by-curiosity-and-matcha`
+- `03--good-things-begin-with-a-hello`
 
-Use `<a name="…"></a>` for these custom anchors. GitHub's profile navigation
-resolves named anchors; an `id`-only anchor passed Markdown rendering but did not
-jump when clicked on the live profile. Verify the chapter links on the profile
-after publishing, as a local Markdown preview cannot test GitHub's navigation.
+If a chapter heading changes, update its menu link and any return link. Verify
+chapter navigation on the live profile after publishing; a local Markdown preview
+cannot test GitHub's navigation behavior.
 
 Project descriptions were adapted from public repositories on 7 September 2026:
 
@@ -66,7 +65,7 @@ References:
 
 - [About profile READMEs](https://docs.github.com/en/account-and-profile/concepts/personal-profile)
 - [GitHub formatting and picture support](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
-- [Custom anchor syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#custom-anchors)
+- [Section link syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#section-links)
 
 ## Validation
 
