@@ -1,21 +1,59 @@
 # Maintaining the GitHub edition
 
-This repository powers the profile README at https://github.com/SleepyLe0.
+This repository powers https://github.com/SleepyLe0.
 
-## Content
+## Edit and rebuild
 
-Edit `README.md`. The chapter menu points directly to GitHub's rendered heading IDs:
+Edit `artwork-source/README.template.md`, then run:
 
-- `user-content-00--somewhere-between-dream--code`
-- `user-content-01--little-sparks-real-possibilities`
-- `user-content-02--powered-by-curiosity-and-matcha`
-- `user-content-03--good-things-begin-with-a-hello`
+```sh
+bun install --frozen-lockfile
+bun run build:island
+```
 
-The `user-content-` prefix targets the ID present in GitHub's rendered HTML,
-so ordinary browser fragment navigation can resolve the destination directly.
-If a chapter heading changes, update its menu link and any return link. Verify
-chapter navigation on the live profile after publishing; a local Markdown preview
-cannot test GitHub's navigation behavior.
+`README.md` is generated. The build inserts the miniature island at the single
+`ISLAND_STL` marker and writes `assets/sleepy-island.stl` for GitHub's standalone
+viewer. Commit the template, generated README, and model together. The build
+checks the model parses, contains finite coordinates, and keeps the complete
+README below 450 KB. Dependencies are pinned in `package.json` and `bun.lock`.
+
+`artwork-source/island-model.mjs` is a standalone, faceted adaptation of the
+portfolio's procedural Three.js model. It preserves the studio, stepping stones,
+portal, matcha garden, sleeping cat, mailbox, and floating terrain. Cloud particles,
+textures, lighting, and application behavior stay in the full portfolio. STL is
+geometry only; GitHub supplies the material and viewer controls. The export uses
+Z as the up axis and rounds coordinates to keep the inline model small.
+
+## Interactions
+
+- The banner links to the inline 3D model.
+- The three illustrated doors link to the work, about, and contact chapters.
+- The STL viewer provides rotate, zoom, pan, auto-rotation, and display modes.
+- A nested disclosure quest lets visitors find the cat, mailbox, and studio.
+- Each project opens separately; technical notes have their own disclosures.
+- Day/night artwork, a silent island GIF, and personal notes remain expandable.
+- The standalone STL link is available if the inline viewer cannot load.
+
+The chapter links point directly to GitHub's rendered heading IDs using the
+`user-content-` prefix. Update the links when changing headings, and verify them
+on GitHub after publication.
+
+## Artwork
+
+- `assets/island-day.png` and `assets/island-night.png`: captures of the portfolio,
+  selected by the reader's color scheme.
+- `assets/island-orbit.gif`: silent animation behind a disclosure.
+- `assets/door-*.svg`: editable vector navigation cards.
+- `assets/portrait.webp`: the portrait already used in the portfolio.
+
+`artwork-source/page.tsx` and `capture.tsx` preserve the banner export route. Copy
+those two files to `app/readme-capture/` in a local website checkout and capture
+1280 × 720 views at `/readme-capture`, `/readme-capture?night=1`, and
+`/readme-capture?motion=1`. Wait until the loading message disappears and lighting
+settles. Remove the temporary route after capture. The GIF was encoded as a short
+forward-and-back loop from captured PNG frames.
+
+## Content sources
 
 Project descriptions were adapted from public repositories on 7 September 2026:
 
@@ -24,54 +62,22 @@ Project descriptions were adapted from public repositories on 7 September 2026:
 - [KMUTT backend](https://github.com/SleepyLe0/kmutt-proj-be)
 - [SRE capstone](https://github.com/SleepyLe0/SRE-Ansible)
 
-The SRE project is described as team work. The profile makes no claims about
-employers, years of experience, awards, user counts, or clinical outcomes.
-Contact identity comes from the portfolio's existing public metadata. No private
-repositories, credentials, runtime environment values, or admin URLs are included.
+The SRE project is team work. Contact identity and the portrait come from the
+existing portfolio. Keep personal claims grounded in public project information.
 
-## Artwork
+## GitHub compatibility and validation
 
-- `assets/island-day.png`: daylight banner.
-- `assets/island-night.png`: moonlight banner.
-- `assets/island-orbit.gif`: silent island animation inside an expandable section.
+The README uses GitHub's supported Markdown features, including an ASCII STL
+code fence that GitHub enriches into its own interactive viewer. It does not
+include application scripts or a custom iframe. The profile's artwork is served
+from committed assets; the full-color website is a separate experience.
 
-The still images switch with the reader's GitHub color scheme using `<picture>`.
-The animation lives behind a `<details>` disclosure, leaving a still banner as the
-default. Readers can collapse the animation; there is no audio.
+Before publishing, run the build, check local image references and fragment
+links, and preview the candidate branch on GitHub. Verify that the STL viewer
+loads, that no raw geometry is visible in rendered mode, and that project and
+quest disclosures work. Repeat the check on the profile after merging to `main`.
 
-These are captures of the actual procedural Three.js scene in
-`sleepyleo-website/components/sleepy-world-scene.tsx`, rendered with a dedicated
-banner composition. `artwork-source/` preserves the small capture route used to
-make them. It imports the model from the portfolio instead of maintaining a
-second copy. To refresh the artwork, copy that folder to `app/readme-capture/`
-in a local website checkout, start the website, and capture these views:
-
-- `/readme-capture` — daylight still.
-- `/readme-capture?night=1` — moonlight still.
-- `/readme-capture?motion=1` — moving daylight scene.
-
-Capture the full 1280 × 720 artwork viewport after the loading message disappears.
-Allow lighting to settle before the night capture. Remove the temporary route
-from the website checkout after exporting; it is not part of the deployed site.
-The GIF is a short forward-and-back loop encoded from captured PNG frames.
-
-## What GitHub can render
-
-The README uses GitHub-flavored Markdown and supported HTML: links, images,
-`picture`, tables, and `details` / `summary`. It has no scripts, iframes, embedded
-WebGL, fake controls, third-party statistics widgets, or live-server image
-requests. GitHub serves the committed assets even when the portfolio server is
-offline. The linked website is needed only for interactive exploration.
-
-References:
-
-- [About profile READMEs](https://docs.github.com/en/account-and-profile/concepts/personal-profile)
-- [GitHub formatting and picture support](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
-- [Section link syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#section-links)
-
-## Validation
-
-Before publishing, verify that all local asset paths exist, all four anchors are
-present, every project is public, and the README renders through GitHub's Markdown
-API. Avoid adding claims from private repositories or treating sample project
-configuration as profile information.
+- [Interactive STL in Markdown](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-stl-3d-models)
+- [3D viewer controls](https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files#3d-file-viewer)
+- [Expandable sections](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections)
+- [Pictures and theme variants](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)

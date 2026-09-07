@@ -23,7 +23,7 @@ export function createIsland() {
   }
   const box = (w, h, d, mat, x, y, z, parent = world) => mesh(new THREE.BoxGeometry(w, h, d), mat, x, y, z, parent);
   const sphere = (r, mat, x, y, z, parent = world) => mesh(new THREE.IcosahedronGeometry(r, 0), mat, x, y, z, parent);
-  const cylinder = (top, bottom, h, mat, x, y, z, parent = world, segments = 48) => mesh(new THREE.CylinderGeometry(top, bottom, h, Math.min(segments, 6)), mat, x, y, z, parent);
+  const cylinder = (top, bottom, h, mat, x, y, z, parent = world, segments = 48) => mesh(new THREE.CylinderGeometry(top, bottom, h, segments === 64 ? 24 : Math.min(segments, 6)), mat, x, y, z, parent);
   cylinder(5.25, 4.9, 0.45, grass, 0, 0, 0, world, 64);
   cylinder(4.9, 3.9, 0.95, stone, 0, -0.65, 0, world, 14);
   cylinder(3.9, 1.7, 1.45, cream, 0, -1.8, 0, world, 10);

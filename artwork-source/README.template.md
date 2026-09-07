@@ -199,7 +199,7 @@ Fullstack developer. TypeScript enthusiast. Professional oversleeper. I like fol
 </details>
 
 <details>
-<summary><strong>Switch the scenery · daylight & moonlight</strong></summary>
+<summary><strong>Two moods to explore · daylight & moonlight</strong></summary>
 
 <br>
 
