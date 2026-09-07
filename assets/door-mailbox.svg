@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="190" viewBox="0 0 320 190" role="img" aria-label="03 / THE MAILBOX">
+ <rect width="320" height="190" rx="12" fill="#223b34"/>
+ <path d="M22 166h276" stroke="#496158"/>
+ <circle cx="52" cy="50" r="31" fill="#324d41"/>
+ <g transform="translate(22 19)" fill="none" stroke="#dedfbd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 23h31a8 8 0 0 1 8 8v12H10ZM10 23a8 8 0 0 1 8 8v12M28 43v13M34 23V8h13v8H34M22 32h13"/></g>
+ <text x="277" y="54" fill="#d7b29b" font-family="Arial,sans-serif" font-size="26">↗</text>
+ <text x="24" y="117" fill="#f0ede0" font-family="Arial,sans-serif" font-size="23" font-weight="600">03 / THE MAILBOX</text>
+ <text x="24" y="145" fill="#aebeae" font-family="Arial,sans-serif" font-size="17">The next good thing</text>
+ </svg>

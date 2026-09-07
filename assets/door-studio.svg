@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="190" viewBox="0 0 320 190" role="img" aria-label="01 / THE STUDIO">
+ <rect width="320" height="190" rx="12" fill="#223b34"/>
+ <path d="M22 166h276" stroke="#496158"/>
+ <circle cx="52" cy="50" r="31" fill="#324d41"/>
+ <g transform="translate(22 19)" fill="none" stroke="#dedfbd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 35V19L30 9l17 10v16M9 19 30 6l21 13M22 35V23h16v12M8 39h44M23 28h14"/></g>
+ <text x="277" y="54" fill="#d7b29b" font-family="Arial,sans-serif" font-size="26">↗</text>
+ <text x="24" y="117" fill="#f0ede0" font-family="Arial,sans-serif" font-size="23" font-weight="600">01 / THE STUDIO</text>
+ <text x="24" y="145" fill="#aebeae" font-family="Arial,sans-serif" font-size="17">Ideas, made real</text>
+ </svg>

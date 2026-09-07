@@ -1,0 +1,11 @@
+{
+  "name": "sleepyleo-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:island": "node scripts/build-island.mjs"
+  },
+  "dependencies": {
+    "three": "0.185.1"
+  }
+}
