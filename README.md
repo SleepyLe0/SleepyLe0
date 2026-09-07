@@ -23,10 +23,10 @@
 
 <table>
   <tr>
-    <td align="center" width="25%"><a href="#00--somewhere-between-dream--code"><strong>00 · THE ISLAND</strong></a><br><sub>A place for possibility</sub></td>
-    <td align="center" width="25%"><a href="#01--little-sparks-real-possibilities"><strong>01 · THE WORKSHOP</strong></a><br><sub>Ideas, made real</sub></td>
-    <td align="center" width="25%"><a href="#02--powered-by-curiosity-and-matcha"><strong>02 · THE SLOW CORNER</strong></a><br><sub>The human behind it all</sub></td>
-    <td align="center" width="25%"><a href="#03--good-things-begin-with-a-hello"><strong>03 · THE NEXT CHAPTER</strong></a><br><sub>It starts with a hello</sub></td>
+    <td align="center" width="25%"><a href="#user-content-00--somewhere-between-dream--code"><strong>00 · THE ISLAND</strong></a><br><sub>A place for possibility</sub></td>
+    <td align="center" width="25%"><a href="#user-content-01--little-sparks-real-possibilities"><strong>01 · THE WORKSHOP</strong></a><br><sub>Ideas, made real</sub></td>
+    <td align="center" width="25%"><a href="#user-content-02--powered-by-curiosity-and-matcha"><strong>02 · THE SLOW CORNER</strong></a><br><sub>The human behind it all</sub></td>
+    <td align="center" width="25%"><a href="#user-content-03--good-things-begin-with-a-hello"><strong>03 · THE NEXT CHAPTER</strong></a><br><sub>It starts with a hello</sub></td>
   </tr>
 </table>
 
@@ -163,5 +163,5 @@ Have a curious idea, a new opportunity, or a story to share? There’s always ro
 
 <p align="center">
   <sub>4 / 4 CORNERS DISCOVERED · HANDCRAFTED WITH CODE & A LITTLE DAYDREAMING</sub><br>
-  <a href="#00--somewhere-between-dream--code"><sub>Back to the island ↑</sub></a>
+  <a href="#user-content-00--somewhere-between-dream--code"><sub>Back to the island ↑</sub></a>
 </p>

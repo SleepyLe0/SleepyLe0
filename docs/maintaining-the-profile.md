@@ -4,13 +4,15 @@ This repository powers the profile README at https://github.com/SleepyLe0.
 
 ## Content
 
-Edit `README.md`. The chapter menu uses GitHub's generated heading anchors:
+Edit `README.md`. The chapter menu points directly to GitHub's rendered heading IDs:
 
-- `00--somewhere-between-dream--code`
-- `01--little-sparks-real-possibilities`
-- `02--powered-by-curiosity-and-matcha`
-- `03--good-things-begin-with-a-hello`
+- `user-content-00--somewhere-between-dream--code`
+- `user-content-01--little-sparks-real-possibilities`
+- `user-content-02--powered-by-curiosity-and-matcha`
+- `user-content-03--good-things-begin-with-a-hello`
 
+The `user-content-` prefix targets the ID present in GitHub's rendered HTML,
+so ordinary browser fragment navigation can resolve the destination directly.
 If a chapter heading changes, update its menu link and any return link. Verify
 chapter navigation on the live profile after publishing; a local Markdown preview
 cannot test GitHub's navigation behavior.
