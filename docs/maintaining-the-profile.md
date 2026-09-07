@@ -11,6 +11,11 @@ Edit `README.md`. Keep these four chapter anchors stable:
 - `the-slow-corner`
 - `the-next-chapter`
 
+Use `<a name="…"></a>` for these custom anchors. GitHub's profile navigation
+resolves named anchors; an `id`-only anchor passed Markdown rendering but did not
+jump when clicked on the live profile. Verify the chapter links on the profile
+after publishing, as a local Markdown preview cannot test GitHub's navigation.
+
 Project descriptions were adapted from public repositories on 7 September 2026:
 
 - [Sleepy World](https://github.com/SleepyLe0/sleepyleo-website)
@@ -61,6 +66,7 @@ References:
 
 - [About profile READMEs](https://docs.github.com/en/account-and-profile/concepts/personal-profile)
 - [GitHub formatting and picture support](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
+- [Custom anchor syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#custom-anchors)
 
 ## Validation
 

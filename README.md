@@ -30,7 +30,7 @@
   </tr>
 </table>
 
-<a id="the-island"></a>
+<a name="the-island"></a>
 
 ## 00 / Somewhere between dream & code.
 
@@ -51,7 +51,7 @@ The full island has orbit controls, clickable destinations, daylight and moonlig
 
 </details>
 
-<a id="the-workshop"></a>
+<a name="the-workshop"></a>
 
 ## 01 / Little sparks. Real possibilities.
 
@@ -115,7 +115,7 @@ An INT531 team capstone at KMUTT: deployment automation for a Next.js applicatio
 
 <p align="right"><a href="https://github.com/SleepyLe0?tab=repositories">There’s more in the workshop →</a></p>
 
-<a id="the-slow-corner"></a>
+<a name="the-slow-corner"></a>
 
 ## 02 / Powered by curiosity. And matcha.
 
@@ -159,7 +159,7 @@ The island has two moods. The banner above follows your GitHub theme.
 
 </details>
 
-<a id="the-next-chapter"></a>
+<a name="the-next-chapter"></a>
 
 ## 03 / Good things begin with a hello.
 
